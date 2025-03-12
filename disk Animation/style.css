@@ -1,0 +1,64 @@
+body {
+  background-color: lightblue;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disk {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.disk1 {
+  width: 100px;
+  height: 100px;
+  animation: moving_1 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate;
+}
+.disk2 {
+  width: 75px;
+  height: 75px;
+  animation: moving_2 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate;
+}
+.disk3 {
+  width: 50px;
+  height: 50px;
+  animation: moving_3 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate;
+}
+
+
+@keyframes moving_1 {
+  0%,
+  10% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes moving_2 {
+  0%,
+  40% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes moving_3 {
+  0%,
+  70% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

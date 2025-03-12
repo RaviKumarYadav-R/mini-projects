@@ -1,0 +1,46 @@
+.download svg {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  transition: bottom .3s linear;
+
+}
+.download {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 238, 255, 0.4);
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid rgba(0, 238, 255, 0.577);
+  border-radius: 50%;
+  transition: all 0.3s ease-in;
+
+}
+
+.download span {
+    position: absolute;
+    bottom: -20px;
+    color: white;
+    font-size: 0px;
+}
+
+
+.download:hover {
+  width: 100px;
+  border-radius: 40px;
+}
+.download:hover span {
+  font-size: 12px;
+  opacity: 1;
+  bottom: unset;
+  transition: all 0.1s ease-in;
+}
+
+.download:hover svg {
+  bottom: -10px;
+}

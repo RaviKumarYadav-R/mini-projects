@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+.loader span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: rise 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite alternate;
+}
+
+@keyframes rise {
+  to {
+    transform: translateY(-50px) scale(1.2);
+
+  }
+}

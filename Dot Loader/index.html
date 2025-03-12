@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <span>I</span>
+      <span>N</span>
+      <span>F</span>
+      <span>I</span>
+      <span>N</span>
+      <span>I</span>
+      <span>T</span>
+      <span>E</span>
+      <span>_</span>
+      <span>C</span>
+      <span>S</span>
+      <span>S</span>
+    </div>
+
+    <script>
+      const allSpan = document.querySelectorAll("span");
+      allSpan.forEach((span, i) => {
+        span.style.animationDelay = `${(i + 1) * 100}ms`;
+      });
+    </script>
+  </body>
+</html>

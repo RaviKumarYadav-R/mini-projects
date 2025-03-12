@@ -1,0 +1,39 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+label {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  background-color: lightskyblue;
+  border-radius: 20px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+label input {
+  display: none;
+}
+
+label span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+input:checked + span {
+  transform: translateX(30px);
+}
+
+body:has(input:checked){
+    background-color: #000;
+    color: #fff;
+}
