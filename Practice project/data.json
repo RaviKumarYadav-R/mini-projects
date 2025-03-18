@@ -1,0 +1,32 @@
+[
+  {
+    "id": "project1",
+    "title": "Simple ToDo List",
+    "description": "A basic ToDo list application built with HTML, CSS, and JavaScript.",
+    "sourceCodeLink": "projects/project1/source.zip",
+    "imageUrl": "projects/project1/thumbnail.png",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "liveDemo": "projects/project1/index.html",
+    "githubLink": "https://github.com/yourusername/project1"
+  },
+  {
+    "id": "project2",
+    "title": "Color Palette Generator",
+    "description": "Generates random color palettes.",
+    "sourceCodeLink": "projects/project2/source.zip",
+    "imageUrl": "projects/project2/thumbnail.png",
+    "technologies": ["JavaScript"],
+    "liveDemo": "projects/project2/index.html",
+    "githubLink": "https://github.com/yourusername/project2"
+  },
+  {
+    "id": "project3",
+    "title": "Basic Calculator",
+    "description": "A simple calculator built with HTML, CSS and JavaScript.",
+    "sourceCodeLink": "projects/project3/source.zip",
+    "imageUrl": "projects/project3/thumbnail.png",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "liveDemo": "projects/project3/index.html",
+    "githubLink": "https://github.com/yourusername/project3"
+  }
+]

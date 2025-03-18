@@ -1,3 +1,6 @@
+body{
+  background-color: lightcyan;
+}
 .navbar {
   width: fit-content;
   display: flex;

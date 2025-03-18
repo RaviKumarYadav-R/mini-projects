@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    height: 800px;
+    gap: 20px;
+}
+
+.left, .right{
+    flex-basis: 50%;
+    height: 100%;
+}
+
+.left textarea{
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+}
+
+.right iframe{
+    width: 100%;
+    height: 100%;
+}
