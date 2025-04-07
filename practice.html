@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Localhost Notification Test</title>
+</head>
+<body>
+  <h1>Local Notification Test</h1>
+  <button onclick="notify()">Show Notification</button>
+
+  <script>
+    function notify() {
+      Notification.requestPermission().then(permission => {
+        if (permission === "granted") {
+          new Notification("Hi there!", {
+            body: "Testing notification from localhost 🚀",
+            icon: "https://cdn-icons-png.flaticon.com/512/1057/1057241.png"
+          });
+        } else {
+          alert("Permission not granted.");
+        }
+      });
+    }
+  </script>
+</body>
+</html>

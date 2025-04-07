@@ -10,38 +10,49 @@ body {
 button {
   padding: 10px 20px;
   border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   border: 1px solid #000;
   font-weight: 900;
   outline: 0;
   position: relative;
   overflow: hidden;
-  background-color: transparent;
-  color: #fff;
-  transition: all 0.3s ease 0.2s;
+  background-color: #fff;
   cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in 0.3s;
 }
 
 button span {
   display: block;
-  background-image: linear-gradient(lightpink, red);
+  background-image: radial-gradient(
+    circle,
+    #4776e6 0%,
+    #8e54e9 51%,
+    #4776e6 100%
+  );
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 0;
+  height: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
   border-radius: 50%;
   z-index: -1;
+  opacity: 0.5;
 }
 
 button:hover {
-  color: black;
-  background-color: #fff;
+  color: #fff;
+  transition-delay: 0s;
+  background-color: transparent;
 }
 
 button:hover span {
-  width: 0;
-  height: 0;
-  opacity: 0.5;
+  width: 150px;
+  height: 150px;
+  opacity: 1;
 }

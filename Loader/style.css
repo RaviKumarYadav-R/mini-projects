@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #1f1f1f;
+}
+.container {
+  width: 100px;
+  display: flex;
+  gap: 2px;
+}
+.container .squre {
+  height: 50px;
+  background-color: lightseagreen;
+  width: 50px;
+}
+
+
+.container .squre:nth-child(1) {
+  animation: loader1 3s ease-in-out infinite;
+}
+.container .squre:nth-child(2) {
+  animation: loader2 3s ease-in-out infinite;
+}
+.container .squre:nth-child(3) {
+  animation: loader3 3s ease-in-out infinite;
+}
+.container .squre:nth-child(4) {
+  animation: loader4 3s ease-in-out infinite;
+}
+.container .squre:nth-child(5) {
+  animation: loader5 3s ease-in-out infinite;
+}
+.container .squre:nth-child(6) {
+  animation: loader6 3s ease-in-out infinite;
+}
+.container .squre:nth-child(7) {
+  animation: loader7 3s ease-in-out infinite;
+}
+.container .squre:nth-child(8) {
+  animation: loader8 3s ease-in-out infinite;
+}
+
+@keyframes loader1 {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(90deg);
+    opacity: 0.5;
+  }
+}
+@keyframes loader2 {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(90deg);
+    opacity: 0.5;
+  }
+}
+
+@keyframes loader3 {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotate(90deg);
+    opacity: 0.5;
+  }
+}
+@keyframes loader4 {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+    opacity: 0.5;
+  }
+}
+@keyframes loader5 {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(90deg);
+    opacity: 0.5;
+  }
+}
+@keyframes loader6 {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  35% {
+    transform: rotate(90deg);
+    opacity: 0.5;
+  }
+}
+@keyframes loader7 {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  40% {
+    transform: rotate(90deg);
+    opacity: 0.5;
+  }
+}
+@keyframes loader8 {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  45% {
+    transform: rotate(90deg);
+    opacity: 0.5;
+  }
+}

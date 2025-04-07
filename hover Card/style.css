@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    color: white;
+}
+
+.card-container .cards{
+    width: 200px;
+    padding:10px 20px;
+    font-size: 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: #B4CFE5;
+}
+.green{
+    background-color: green;
+}
+
+.heading{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.card-container .cards:hover{
+    transform: scale(1.1, 1.1);
+}
+.card-container:hover > .cards:not(:hover){
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
